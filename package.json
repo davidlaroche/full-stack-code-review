@@ -1,0 +1,26 @@
+{
+  "name": "api-collector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.json",
+    "nuke": "rm -rf csv.db && find uploads -mindepth 1 ! -name '.gitkeep' -exec rm -rf {} +",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/multipart": "^7.7.3",
+    "@fastify/static": "^6.10.2",
+    "csv-parse": "^5.4.0",
+    "fastify": "^4.21.0",
+    "pino-pretty": "^10.2.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

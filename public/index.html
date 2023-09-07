@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms.css"
+    />
+    <link rel="stylesheet" href="public/index.css" />
+    <script src="public/ctrl.js"></script>
+  </head>
+  <body>
+    <div class="demo-page">
+      <main class="demo-page-content">
+        <section>
+          <h1 class="package-name">API COLLECTOR</h1>
+          <p>
+            Our future password manager has a system for the whole company to
+            share passwords.
+            <br />
+            So as not to duplicate certain data, we need to collect your export
+            files in order to sort them out
+          </p>
+        </section>
+
+        <section>
+          <form id="form" method="POST">
+            <div class="nice-form-group">
+              <label>Email address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+
+            <div class="nice-form-group">
+              <label>📁 CSV</label>
+              <input id="file" type="file" accept=".csv" />
+            </div>
+
+            <button id="submit-btn" type="submit" class="button">
+              🚀 Submit
+            </button>
+          </form>
+          <div id="success-msg">
+            🎉 Congratulations, thank you, we'll be in touch on Slack for the
+            rest.
+          </div>
+          <div id="error-msg">❌ There is an error:&nbsp;</div>
+        </section>
+
+        <footer>Made with ♥</footer>
+      </main>
+    </div>
+  </body>
+</html>
